@@ -3,54 +3,22 @@
   <head>
     <title>MQP</title>
     <meta charset="utf-8">
-    <script src = "btnScript.js"></script>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css">
-
-    <style>
-       /*Row of tabs */
-      .tab {
-        overflow: hidden;
-        background-color: #f1f1f1;
-      }
-      
-      /* Style the tab buttons */
-      .tab button {
-        cursor: pointer;
-        outline: none;
-        border: none;
-        background-color: #8fbc8fa9;
-        margin: 0; 
-      }
-      
-      /* Used to indict which tab the mouse is over*/
-      .tab button:hover {
-        background-color:  #8FBC8F;
-      }
-      
-      /* Used to indict the active tab*/
-      .tab button.active {
-        background-color:  #8FBC8F;
-      }
-      
-      /* Used to hide and show tab contents */
-      .tabcontent {
-        display: none;
-      }
-
-      #Main {
-        display: block; 
-      }
-      </style>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   </head>
   <body>
-    <h1>Wildlife Trafficking Project</h1>
-    <nav class="tab">
-      <button class="tablinks" onclick="openTab(event, 'Main')">Dashboard</button>
-      <button class="tablinks" onclick="openTab(event, 'Info')">About</button>
-    </nav>
+  
+  <div class="container">
+    <h2>Wildlife Trafficking Network Project</h2>
+    <ul class="nav nav-pills">
+      <li class="active"><a data-toggle="pill" href="#home">Database</a></li>
+      <li><a data-toggle="pill" href="#menu1">About</a></li>
+    </ul>
     
-    <div id="Main" class="tabcontent">
+    <div class="tab-content">
+      <div id="home" class="tab-pane fade in active">
       <h3>Dashboard</h3>
       <p>This is using a given example tableau story currently</p>
       <div class='tableauPlaceholder' id='viz1642118279259' style='position: relative'>
@@ -74,39 +42,17 @@
         vizElement.style.minWidth='1000px';vizElement.style.maxWidth='100%';
         vizElement.style.minHeight='647px';vizElement.style.maxHeight=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
     </div>
-    
-    <div id="Info" class="tabcontent">
+    <div id="menu1" class="tab-pane fade">
       <h3>Info</h3>
       <p>TODO blurb about this page and this project</p> 
       <p>TODO info about data/Eagle briefings</p>
       <a href="https://www.eagle-enforcement.org/">Eagle</a>
-      <p>and other infomations</p>
+      <p>TODO other infomation</p>
       <p>Names</p>
+      </div>
     </div>
-
- 
-    <script>
-    function openTab(evt, tabName) {
-      var i, tabcontent, tablinks;
-
-       //Hide all content 
-      tabcontent = document.getElementsByClassName("tabcontent");
-      for (i = 0; i < tabcontent.length; i++) {
-        tabcontent[i].style.display = "none";
-      }
-      
-      //Clears all tab buttons of looking visually active 
-      tablinks = document.getElementsByClassName("tablinks");
-      for (i = 0; i < tablinks.length; i++) {
-        tablinks[i].className = tablinks[i].className.replace(" active", "");
-      }
-
-      //Shows the content by setting the css display to block rather than none, for the correct div 
-      document.getElementById(tabName).style.display = "block";
-
-      //Set the tab button to active for visual purposes 
-      evt.currentTarget.className += " active";
-    }
-    </script>
+  </div>
+  
   </body>
-</html>
+  </html>
+  
