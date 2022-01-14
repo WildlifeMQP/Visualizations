@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>MQP</title>
+    <meta charset="utf-8">
+    <script src = "btnScript.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css">
+
+    <style>
+       /*Row of tabs */
+      .tab {
+        overflow: hidden;
+        background-color: #f1f1f1;
+      }
+      
+      /* Style the tab buttons */
+      .tab button {
+        cursor: pointer;
+        outline: none;
+        border: none;
+        background-color: #8fbc8fa9;
+        margin: 0; 
+      }
+      
+      /* Used to indict which tab the mouse is over*/
+      .tab button:hover {
+        background-color:  #8FBC8F;
+      }
+      
+      /* Used to indict the active tab*/
+      .tab button.active {
+        background-color:  #8FBC8F;
+      }
+      
+      /* Used to hide and show tab contents */
+      .tabcontent {
+        display: none;
+      }
+
+      #Main {
+        display: block; 
+      }
+      </style>
+  </head>
+  <body>
+    <h1>Wildlife Trafficking Project</h1>
+    <nav class="tab">
+      <button class="tablinks" onclick="openTab(event, 'Main')">Dashboard</button>
+      <button class="tablinks" onclick="openTab(event, 'Info')">About</button>
+    </nav>
+    
+    <div id="Main" class="tabcontent">
+      <h3>Dashboard</h3>
+      <p>This is using a given example tableau story currently</p>
+      <div class='tableauPlaceholder' id='viz1642118279259' style='position: relative'>
+        <object class='tableauViz'  style='display:none;'>
+          <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> 
+          <param name='embed_code_version' value='3' /> 
+          <param name='site_root' value='' />
+          <param name='name' value='WorldIndicators_16421182104380&#47;GlobalIndicators' />
+          <param name='tabs' value='no' /><param name='toolbar' value='yes' />
+          <param name='animate_transition' value='yes' />
+          <param name='display_static_image' value='yes' /
+          <param name='display_spinner' value='yes' />
+          <param name='display_overlay' value='yes' />
+          <param name='display_count' value='yes' />
+          <param name='language' value='en-US' />
+          <param name='filter' value='publish=yes' /></object>
+        </div>                
+        <script type='text/javascript'>                    
+        var divElement = document.getElementById('viz1642118279259');                    
+        var vizElement = divElement.getElementsByTagName('object')[0];                    
+        vizElement.style.minWidth='1000px';vizElement.style.maxWidth='100%';
+        vizElement.style.minHeight='647px';vizElement.style.maxHeight=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+    </div>
+    
+    <div id="Info" class="tabcontent">
+      <h3>Info</h3>
+      <p>TODO blurb about this page and this project</p> 
+      <p>TODO info about data/Eagle briefings</p>
+      <a href="https://www.eagle-enforcement.org/">Eagle</a>
+      <p>and other infomations</p>
+      <p>Names</p>
+    </div>
+
+ 
+    <script>
+    function openTab(evt, tabName) {
+      var i, tabcontent, tablinks;
+
+       //Hide all content 
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+      
+      //Clears all tab buttons of looking visually active 
+      tablinks = document.getElementsByClassName("tablinks");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
+
+      //Shows the content by setting the css display to block rather than none, for the correct div 
+      document.getElementById(tabName).style.display = "block";
+
+      //Set the tab button to active for visual purposes 
+      evt.currentTarget.className += " active";
+    }
+    </script>
+  </body>
+</html>
