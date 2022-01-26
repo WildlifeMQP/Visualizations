@@ -14,4 +14,10 @@ app.post( '/btnClickServer', bodyParser.json(), (req,res) => {
     return res.json("hello!")
 })
 
+
+app.post( '/sql', (req,res)=> {
+    entry = req.body
+    return res.json("hello!")
+})
+
 app.listen(process.env.PORT || 3000);
