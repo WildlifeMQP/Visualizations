@@ -1,3 +1,5 @@
+To run locally: 
+
 Set up: 
 Navigate to the project directory in git bash 
 Run npm install 
