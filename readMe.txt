@@ -1,6 +1,6 @@
 To run locally: 
 
-Set up: 
+Set up:  
 Navigate to the project directory in git bash 
 Run npm install 
 Run npm i -g nodemon
