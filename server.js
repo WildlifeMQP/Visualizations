@@ -8,12 +8,17 @@ app.get('/', (req, res) => {
 
 app.use( express.static('public') )
 
+
+
+
+
+
+
 app.post( '/btnClickServer', bodyParser.json(), (req,res) => {
     // assumes only one object to insert
     entry = req.body
     return res.json("hello!")
 })
-
 
 app.post( '/sql', (req,res)=> {
     entry = req.body
