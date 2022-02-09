@@ -11,6 +11,6 @@ Run nodemon ./server.js
     This starts the server
 
 With the server running in the browser go to: 
-http://localhost:3000/main.html 
+http://localhost:3000/index.html 
 
 

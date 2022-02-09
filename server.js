@@ -3,26 +3,11 @@ const express = require( 'express' ),
       app = express()
 
 app.get('/', (req, res) => {
-    res.redirect( 'main.html' )
+    res.redirect( 'index.html' )
 })
 
 app.use( express.static('public') )
 
 
-
-
-
-
-
-app.post( '/btnClickServer', bodyParser.json(), (req,res) => {
-    // assumes only one object to insert
-    entry = req.body
-    return res.json("hello!")
-})
-
-app.post( '/sql', (req,res)=> {
-    entry = req.body
-    return res.json("hello!")
-})
 
 app.listen(process.env.PORT || 3000);
