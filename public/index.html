@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>MQP</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+  
+  <div class="container">
+    <h2>Wildlife Trafficking Network Project</h2>
+    <ul class="nav nav-pills">
+      <li class="active"><a data-toggle="pill" href="#home">Dashboard</a></li>
+      <li><a data-toggle="pill" href="#menu1">About</a></li>
+    </ul>
+  
+    <p> need to confirm the species type, citations etc. </p>
+    <div class="tab-content">
+      <div id="home" class="tab-pane fade in active">
+      <div class='tableauPlaceholder' id='viz1643056144217' style='position: relative'><object class='tableauViz' 
+      style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> 
+      <param name='embed_code_version' value='3' /> 
+      <param name='path' value='views&#47;MQPData_16426115978940&#47;Story1?:language=en-US&amp;:embed=true&amp;publish=yes' /> 
+      <param name='toolbar' value='yes' /><param name='animate_transition' value='yes' />
+      <param name='display_static_image' value='yes' />
+      <param name='display_spinner' value='yes' />
+      <param name='display_overlay' value='yes' />
+      <param name='display_count' value='yes' />
+      <param name='language' value='en-US' />
+      <param name='filter' value='publish=yes' /></object></div>                
+      <script type='text/javascript'>                    
+        var divElement = document.getElementById('viz1643056144217');                    
+        var vizElement = divElement.getElementsByTagName('object')[0];                    
+        vizElement.style.width='1016px';vizElement.style.height='991px';                    
+        var scriptElement = document.createElement('script');                    
+        scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    
+        vizElement.parentNode.insertBefore(scriptElement, vizElement);                
+      </script>
+      <h3>Dashboard Definitions</h3>
+      <ul>
+        <li>Example</li>
+        <li>Example</li>
+        <li>Example</li>
+      </ul>
+      <p>Note. From Pangolin [Photograph], by Marcus Chua, Smithonsian’s National Zoo, 2016, Flickr
+        (https://www.flickr.com/photos/nationalzoo/29338235325/in/photostream/ ). CC BY-NC-ND 2.0.</p>
+    </div>
+    <div id="menu2" class="tab-pane fade">
+      <h4>Query database</h4>
+      <p>TODO process text, connect to database, display result, prevent add/delete for protection</p>
+      <form action = "/sql">
+        <label for="qStr">SQL Command:</label>
+        <input type="text" id="qStr" name="qStr">
+        <br><br>
+        <input type="submit" value="Submit" >
+      </form>
+      <button id = "btn">Button</button>
+    </div>
+    <div id="menu1" class="tab-pane fade">
+      <h3>Project Goals</h3>
+      <p>blurb about this site/project</p>
+      <h3>Data and Resources</h3>
+      <p>Info about Eagle...</p>
+      <a href="https://www.eagle-enforcement.org/">Eagle</a>
+      <p>Eagle Network: </p>
+      <img src="EagleCountries.JPG" alt="Trulli" width="500" height="333">
+      <p>Info about spaCy?</p>
+      <a href="https://spacy.io/">spaCy</a>
+      <p>Data...</p>
+      <h3>Database</h3>
+      <p>...</p>
+      <h3>About Us</h3>
+      <p>Names...</p>
+      <hbox>
+        <img src="Pangolin.jpg" alt="Image of pangolin" height = "300" width = "400">
+        <img src="elephant.jpg" alt="Image of elephant" height = "300" width = "400">
+        <img src="leopard-gb735f5580_1920.jpg" alt="Image of leopard" height = "300" width = "400">
+        </hbox>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+  
