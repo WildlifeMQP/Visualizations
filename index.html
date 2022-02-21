@@ -6,6 +6,11 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+      p.big {
+        line-height: 1.8;
+      }
+    </style>
   </head>
   <body>
   
@@ -58,32 +63,43 @@
         Guanyi Mou, and sponsors, Meredith Gore and Patricia Raxter for all their help and guidance during this project.
       </p>
       <h3>Project Goal</h3>
+      <p class="big">
+        <b>Our goal for this MQP was to design and develop a pipeline to extract data from the Eco Activists for Governance and Law Enforcement (EAGLE) reports and 
+          effectively display the data to help experts in the field examine instances of wildlife trafficking. 
+        </b> 
+        The Dashboard tab of this website displays the data we extracted from EAGLE articles.
+      </p>
+      <h4>
+        What is Wildlife Trafficking?
+      </h4>
       <p>
         The International Consortium on Combating Wildlife Crime, a leading expert, defines wildlife trafficking as “the taking, trading 
         (supplying, selling or trafficking), importing, exporting, and processing, possessing, obtaining and consumption of wild fauna and flora, 
-        including timber and other forest products, in contravention of national or international law” (Wildlife Crime | CITES, n.d.). One 
-        organization, Eco Activists for Governance and Law Enforcement (EAGLE), aims to impede wildlife trafficking and related corruption 
-        through civic activism and collaborating with governments. They do so through investigations, arrests, prosecutions, and publicity. 
-        The organization covers nine countries, Cameroon, Congo, Gabon, Togo, Senegal, Benin, Côte D’Ivoire, Burkina Faso, and Uganda. 
-        EAGLE releases monthly briefings containing details of their recent work including seizures and wildlife trafficker arrests.
+        including timber and other forest products, in contravention of national or international law” 
+        TRAFFIC | Wildlife Crime. (n.d.). Retrieved November 21, 2021, from https://www.traffic.org/what-we-do/projects-and-approaches/wildlife-crime/.
       </p>
+      <h4>
+        Why was this project created?
+      </h4>
       <p>
         Sifting through the EAGLE releases is tedious work for those combating wildlife trafficking such as law enforcement, 
         government agencies, and researchers. There can be many seizures happening within one country over one month so those combating 
-        wildlife trafficking have a lot of data to keep track of and read through. <b> Therefore our goal for this MQP was to design and develop a 
-        pipeline to extract data from the EAGLE reports and effectively display the data to help experts in the field examine instances of 
-        wildlife trafficking.</b>
-        The Dashboard tab of this website displays the data we extracted from EAGLE articles.
+        wildlife trafficking have a lot of data to keep track of and read through. 
+        Automatically collecting the data from the EAGLE articles and displaying it on this website will hopefully help those combating wildlife trafficking.
       </p>
       <h3>Data</h3>
       <p>
-        As stated above, Eco Activists for Governance and Law Enforcement (EAGLE), aims to impede wildlife trafficking and related corruption 
-        through civic activism and collaborating with governments. We utilize their monthly reports to generate visualizations that show law enforcement, 
-        government agencies, and researchers an overview of the data. 
+        Eco Activists for Governance and Law Enforcement (EAGLE), aims to impede wildlife trafficking and related corruption 
+        through civic activism and collaborating with governments. They do so through investigations, arrests, prosecutions, and publicity.
+        The organization covers nine countries, Cameroon, Congo, Gabon, Togo, Senegal, Benin, Côte D’Ivoire, Burkina Faso, and Uganda. 
       </p>
-      <a href="https://www.eagle-enforcement.org/">Click here to view the EAGLE website.</a>
       <p>Countries part of the Eagle network:</p>
       <img src="EagleCountries.JPG" alt="Map of Countries in the Eagle network" width="500" height="333">
+      <p>
+        EAGLE releases monthly briefings containing details of their recent work including seizures and wildlife trafficker arrests across those West African countries.
+        We utilize EAGLE's monthly reports to generate visualizations that show an overview of the data.
+      </p>
+      <a href="https://www.eagle-enforcement.org/">Click here to view the EAGLE website.</a>
       <h3>Resources</h3>
       <p>spaCy is the Python library we used to create our pipeline to extract the EAGLE data.</p>
       <a href="https://spacy.io/">Click here to view the spaCy library.</a>
